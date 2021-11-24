@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Little - Project</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Little - Project</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="container">
+    <div>
+        <div class="border">
+            <span>
+               CSS
+               BOX-SHADOW
+               ГЕНЕРАТОР
+            </span>
+            <label class="label" for="horizontal-length">Горизонтальное смещение</label>
+            <input class="input" id="horizontal-length" type="range" max="50">
+            <label class="label" for="vertical-length">Вертикальное смещение</label>
+            <input class="input" id="vertical-length" type="range">
+            <label class="label" for="blur-radius">Размытие</label>
+            <input class="input" id="blur-radius" type="range">
+            <label class="label" for="spread-radius">Растяжение</label>
+            <input class="input" id="spread-radius" type="range">
+            <label id="color-box-shadow" class="label" for="color">Цвет тени</label>
+            <label class="color-block-text" for="color-box">Цвет блока</label>
+            <div class="color-block">
+                <input class="input" id="color" type="color">
+                <input id="color-box" type="color">
+            </div>
+            <label class="label" for="box">Размер блока</label>
+            <input class="input" id="box" type="range">
+        </div>
+    </div>
+    <div class="block">
+      <div id="block">
+      </div>
+      <div class="text-content">
+      </div>
+    </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>
