@@ -66,8 +66,11 @@ span {
 }
 
 .text-content {
-  max-width: 390px;
   padding: 20px;
+}
+
+.text {
+  display: block;
 }
 
 #color-box {

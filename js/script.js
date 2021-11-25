@@ -7,7 +7,10 @@ const boxShadow = document.querySelector('#block')
 const color = document.querySelector('#color')
 const textCont = document.querySelector('.text-content')
 const colorBox = document.querySelector('#color-box')
-boxShadow.style.boxShadow = '2px 2px 5px 5px black'
+boxShadow.style.boxShadow = '2px 2px 5px 5px #00000'
+textCont.innerHTML = `<div class="text">-webkit-box-shadow: 10px 20px 10px 10px #00000</div>
+                      <div class="text">-moz-box-shadow: 10px 20px 10px 10px #00000</div>
+                      <div class="text">box-shadow: 10px 20px 10px 10px #00000</div> `
 
 slider.addEventListener('input', ()=> {
     boxShadow.style.borderRadius = `${slider.value}px`
@@ -36,7 +39,7 @@ color.addEventListener('input', ()=> {
 })
 const boxSdw = () => {
     boxShadow.style.boxShadow = `${horLent.value}px ${verLent.value}px ${blurRd.value}px ${spreadRd.value}px ${color.value}`
-    textCont.textContent = `-webkit-box-shadow: ${horLent.value}px ${verLent.value}px ${blurRd.value}px ${spreadRd.value}px ${color.value}\n
-                            -moz-box-shadow: ${horLent.value}px ${verLent.value}px ${blurRd.value}px ${spreadRd.value}px ${color.value}\n
-                            box-shadow: ${horLent.value}px ${verLent.value}px ${blurRd.value}px ${spreadRd.value}px ${color.value}`
+    textCont.innerHTML = `<div class="text">-webkit-box-shadow: ${horLent.value}px ${verLent.value}px ${blurRd.value}px ${spreadRd.value}px ${color.value}</div>
+                          <div class="text">-moz-box-shadow: ${horLent.value}px ${verLent.value}px ${blurRd.value}px ${spreadRd.value}px ${color.value}</div>
+                          <div class="text">box-shadow: ${horLent.value}px ${verLent.value}px ${blurRd.value}px ${spreadRd.value}px ${color.value}</div>`
 }

@@ -60,8 +60,11 @@ span {
   box-shadow:  5px 5px 24px -5px rgba(79, 98, 238, 0.6);
 }
 .text-content {
-  max-width: 390px;
+  //max-width: 388px;
   padding: 20px;
+}
+.text {
+  display: block;
 }
 #color-box {
   display: inline-block;
